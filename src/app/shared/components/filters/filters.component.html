@@ -1,0 +1,13 @@
+<form [formGroup]="filtersForm" class="form">
+  <mat-form-field>
+    <mat-label>Кількість котів</mat-label>
+    <input [formControlName]="'countAnimals'" matInput placeholder="Кількість котів">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Породи</mat-label>
+    <mat-select [formControlName]="'selectedBreeds'" multiple>
+      <mat-option *ngFor="let breed of breeds" [value]="breed.id">{{breed.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

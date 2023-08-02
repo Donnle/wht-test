@@ -1,0 +1,7 @@
+export enum ANIMALS_ACTIONS {
+  SET_ANIMALS = '[ANIMALS] SET_ANIMALS'
+}
+
+export enum BREED_ACTIONS {
+  SET_BREEDS = '[BREED] SET_BREEDS'
+}

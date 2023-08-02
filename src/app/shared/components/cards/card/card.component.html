@@ -1,0 +1,10 @@
+<mat-card>
+  <img [src]="animalData.url" alt="animal" class="animal-image" mat-card-image>
+  <mat-card-content *ngIf="animalData.breeds.length > 0">
+    <ul>
+      <li *ngFor="let breed of animalData.breeds">
+        <p>{{breed.name}}</p>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
